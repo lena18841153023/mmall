@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<a href="${pageContext.request.contextPath}/user/find.do">ASDFAD</a>
+<a href="${pageContext.request.contextPath}/find1.do">ASDFAD</a>
 </body>
 </html>
