@@ -71,6 +71,19 @@
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.12</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -127,7 +140,10 @@
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
             <version>3.1</version>
-        </dependency>    <!-- file upload -->    <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        </dependency>
+
+        <!-- file upload -->    <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        <!--文件上传-->
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
@@ -137,7 +153,8 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.0.1</version>
-        </dependency>    <!-- mybatis pager -->
+        </dependency>
+        <!-- mybatis pager -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
@@ -193,6 +210,8 @@
             <artifactId>jedis</artifactId>
             <version>2.9.0</version>
         </dependency>
+
+
     </dependencies>
     <build>
         <finalName>mmall</finalName>

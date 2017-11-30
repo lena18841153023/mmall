@@ -28,6 +28,24 @@ public class Product {
 
     private Date updateTime;
 
+
+
+
+
+
+    public Product(Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status) {
+        this.categoryId = categoryId;
+        this.name = name;
+        this.subtitle = subtitle;
+        this.mainImage = mainImage;
+        this.subImages = subImages;
+        this.detail = detail;
+        this.price = price;
+        this.stock = stock;
+        this.status = status;
+
+    }
+
     public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date createTime, Date updateTime) {
         this.id = id;
         this.categoryId = categoryId;
@@ -43,8 +61,38 @@ public class Product {
         this.updateTime = updateTime;
     }
 
+    public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status) {
+        this.id = id;
+        this.categoryId = categoryId;
+        this.name = name;
+        this.subtitle = subtitle;
+        this.mainImage = mainImage;
+        this.subImages = subImages;
+        this.detail = detail;
+        this.price = price;
+        this.stock = stock;
+        this.status = status;
+    }
+
+
     public Product() {
         super();
+    }
+
+
+    public Product(Integer categoryId, Date createTime, String detail, Integer id, String mainImage, String name, BigDecimal price, Integer status, Integer stock, String subImages, String subtitle, Date updateTime) {
+        this.categoryId = categoryId;
+        this.createTime = createTime;
+        this.detail = detail;
+        this.id = id;
+        this.mainImage = mainImage;
+        this.name = name;
+        this.price = price;
+        this.status = status;
+        this.stock = stock;
+        this.subImages = subImages;
+        this.subtitle = subtitle;
+        this.updateTime = updateTime;
     }
 
     public Integer getId() {
@@ -141,5 +189,23 @@ public class Product {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "categoryId=" + categoryId +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", subtitle='" + subtitle + '\'' +
+                ", mainImage='" + mainImage + '\'' +
+                ", subImages='" + subImages + '\'' +
+                ", detail='" + detail + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                '}';
     }
 }
